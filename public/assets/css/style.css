@@ -21,12 +21,14 @@ border-left:3pt solid black;
 }
 
 .head-burger{
+    font-family: 'Bebas Neue', cursive;
     text-align: center;
     font-size: 18pt;
     margin-bottom:20px;
 }
 
 .main-head{
+    font-family: 'Bebas Neue', cursive;
     margin-bottom:60px;
 }
 
@@ -38,16 +40,21 @@ border-left:3pt solid black;
 
 .uneaten{
     margin-top:10px;
+    font-family: 'Zilla Slab', serif;
 }
 
 .burger{
     margin-left:90px;
+    font-family: 'Zilla Slab', serif;
 }
 
 .eat-burger{
     margin-left:15px;
     border-radius: 5px;
     margin-right:120px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color:white;
+    font-family: 'Alfa Slab One', cursive;
 }
 
 #burger-name{
@@ -66,11 +73,11 @@ border-left:3pt solid black;
 }
 
 .burger-new{
+    font-family: 'Alfa Slab One', cursive;
     margin-bottom:50px;
     border:2pt solid black;
     background-color: red;
     color:white;
-    font-weight: bold;
     border-radius: 5px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
