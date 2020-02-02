@@ -1,29 +1,29 @@
 <div class="row">
     <div class="col-md-2"></div>
-    <div class="col-md-10 text-center">
+    <div class="col-md-8 text-center">
         <div class="row">
             <div class="col-md-12">
                 <h1>EAT-SOME-BURGERS!!!</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" id="burg-uneaten">
-                <ul>
+            <div class="col-md-6 text-center" id="burg-uneaten">
+                <p>
                     {{#each burgers}}
                     {{#unless devoured}}
                     {{> burgers/burger-block devoured=true}}
                     {{/unless}}
                     {{/each}}
-                </ul>
+                </p>
             </div>
-            <div class="col-md-6" id="burg-eaten">
-                <ul>
+            <div class="col-md-6 text-center" id="burg-eaten">
+                <p class = "burger">
                     {{#each burgers}}
                     {{#if devoured}}
                     {{burger_name}}
                     {{/if}}
                     {{/each}}
-                </ul>
+                </p>
             </div>
         </div>
         <div class="row">
