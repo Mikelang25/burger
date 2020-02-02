@@ -14,7 +14,24 @@ $(function () {
         }).then(
             function () {
                 console.log("Devour state changed to", newDevour);
-                // Reload the page to get the updated list
+                location.reload();
+            }
+        );
+    });
+
+    $(".burger-new").on("click", function (event) {
+        console.log("this works")
+        event.preventDefault();
+
+        var newBurger = {
+            burger_name: $("#burger-name").val().trim(),
+        };
+        $.ajax("/api/burgers", {
+            type: "POST",
+            data: newBurger
+        }).then(
+            function () {
+                console.log("cooking up your new burger!");
                 location.reload();
             }
         );

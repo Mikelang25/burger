@@ -2,22 +2,26 @@
     <div class="col-md-2"></div>
     <div class="col-md-8 text-center">
         <div class="row">
-            <div class="col-md-12">
-                <h1>EAT-SOME-BURGERS!!!</h1>
+            <div class="col-md-12 burger-top">
+                <img id="img-berg" src="/assets/images/burger.png">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 text-right" id="burg-uneaten">
-                <h2>Burgers Available for Consumption</h2>
+            <div class="col-md-12">
+                <h1 class="main-head">EAT-SOME-BURGERS!!!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right burger-left" id="burg-uneaten">
+                <h2 class="head-burger">Burgers Available for Consumption</h2>
                 {{#each burgers}}
                 {{#unless devoured}}
                 {{> burgers/burger-block devoured=true}}
                 {{/unless}}
                 {{/each}}
             </div>
-            <div class="col-md-6 text-center" id="burg-eaten">
-                <h2>Burgers Already Consumed</h2>
-
+            <div class="col-md-6 text-center burger-right" id="burg-eaten">
+                <h2 class="head-burger">Burgers Already Consumed</h2>
                 {{#each burgers}}
                 {{#if devoured}}
                 <p class="burger">
@@ -28,10 +32,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center form-main">
 
                 <textarea id="burger-name"></textarea><br>
-                <button id="btn-new-burger">Create</button>
+                <button class="burger-new">Create</button>
             </div>
         </div>
     </div>

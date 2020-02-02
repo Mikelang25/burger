@@ -1,9 +1,39 @@
-#burg-eaten{
-    border:1pt solid black;
+body{
+    background-image: URL("../images/plad.jpg");
+}
+.col-md-12{
+background-color: white;
+border-right:3pt solid black;
+border-left:3pt solid black;
+}
+.burger-top{
+    border-top:3pt solid black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-#burg-uneaten{
-    border:1pt solid black;
+.burger-left{
+    border-left:3pt solid black;
+}
+
+.burger-right{
+    border-right:3pt solid black;
+}
+
+.head-burger{
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom:20px;
+}
+
+.main-head{
+    margin-bottom:60px;
+}
+
+.form-main{
+    border-bottom:3pt solid black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .uneaten{
@@ -17,6 +47,7 @@
 .eat-burger{
     margin-left:15px;
     border-radius: 5px;
+    margin-right:40px;
 }
 
 #burger-name{
@@ -24,4 +55,20 @@
     margin-bottom:20px;
     width: 30%;
     height:75px;
+}
+
+#burg-eaten{
+    background-color: white;
+}
+
+#burg-uneaten{
+    background-color: white;
+}
+
+.burger-new{
+    margin-bottom:50px;
+}
+
+#img-berg{
+    margin-top:30px;
 }

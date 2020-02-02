@@ -42,7 +42,24 @@ var orm = {
         });
     },
     insertOne: function (table, col, val, cb) {
+        var queryString = "INSERT INTO " + table;
 
+        queryString += " (";
+        queryString += col.toString();
+        queryString += ") ";
+        queryString += "VALUES (";
+        queryString += printQuestionMarks(val.length);
+        queryString += ") ";
+
+        console.log(queryString);
+
+        connection.query(queryString, val, function (err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(result);
+        });
     },
     updateOne: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;

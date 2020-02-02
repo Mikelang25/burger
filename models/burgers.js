@@ -11,7 +11,11 @@ var burger = {
             cb(res);
         });
     },
-
+    create: function (cols, val, cb) {
+        orm.insertOne("burgers", cols, val, function (res) {
+            cb(res);
+        });
+    }
 };
 
 module.exports = burger;
