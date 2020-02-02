@@ -23,12 +23,13 @@ border-left:3pt solid black;
 .head-burger{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-size: 18pt;
+    font-size: 20pt;
     margin-bottom:20px;
 }
 
 .main-head{
     font-family: 'Bebas Neue', cursive;
+    font-size: 36pt;
     margin-bottom:60px;
 }
 
