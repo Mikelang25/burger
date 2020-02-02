@@ -7,27 +7,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 text-center" id="burg-uneaten">
-                <p>
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoured=true}}
-                    {{/unless}}
-                    {{/each}}
-                </p>
+            <div class="col-md-6 text-right" id="burg-uneaten">
+                <h2>Burgers Available for Consumption</h2>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+                {{/unless}}
+                {{/each}}
             </div>
             <div class="col-md-6 text-center" id="burg-eaten">
-                <p class = "burger">
-                    {{#each burgers}}
-                    {{#if devoured}}
+                <h2>Burgers Already Consumed</h2>
+
+                {{#each burgers}}
+                {{#if devoured}}
+                <p class="burger">
                     {{burger_name}}
-                    {{/if}}
-                    {{/each}}
                 </p>
+                {{/if}}
+                {{/each}}
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12 text-center">
 
+                <textarea id="burger-name"></textarea><br>
+                <button id="btn-new-burger">Create</button>
+            </div>
         </div>
     </div>
     <div class="col-md-2"></div>
