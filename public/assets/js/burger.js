@@ -23,6 +23,9 @@ $(function () {
         console.log("this works")
         event.preventDefault();
 
+        if(!$("#burger-name").val().trim()){
+            return
+        }else{
         var newBurger = {
             burger_name: $("#burger-name").val().trim(),
         };
@@ -35,6 +38,7 @@ $(function () {
                 location.reload();
             }
         );
+        }
     });
 
 });
